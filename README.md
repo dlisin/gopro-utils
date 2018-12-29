@@ -1,7 +1,15 @@
 GoPro Metadata Format Parser
 ============================
 
-TLDR:
+Installation:
+-------------
+
+- `$ go get -u github.com/dlisin/gopro-utils/bin/gopro2gpx`
+- `$ go get -u github.com/dlisin/gopro-utils/bin/gopro2json`
+- `$ go get -u github.com/dlisin/gopro-utils/bin/gpmdinfo`
+
+TL;DR:
+-----
 
 1. `ffmpeg -y -i GOPR0001.MP4 -codec copy -map 0:m:handler_name:"	GoPro MET" -f rawvideo GOPR0001.bin`
 2. `gopro2json -i GOPR0001.bin -o GOPR0001.json`
